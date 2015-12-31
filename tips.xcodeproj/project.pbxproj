@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0D1035F1C28FF1F00228F8F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D0D1035E1C28FF1F00228F8F /* README.txt */; };
+		D0D103611C2906C500228F8F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D103601C2906C500228F8F /* SettingsViewController.swift */; };
 		D0E9CEAC1C2338B4000EC6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9CEAB1C2338B4000EC6D9 /* AppDelegate.swift */; };
 		D0E9CEAE1C2338B4000EC6D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9CEAD1C2338B4000EC6D9 /* ViewController.swift */; };
 		D0E9CEB11C2338B4000EC6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E9CEAF1C2338B4000EC6D9 /* Main.storyboard */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0D1035E1C28FF1F00228F8F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D0D103601C2906C500228F8F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		D0E9CEA81C2338B4000EC6D9 /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E9CEAB1C2338B4000EC6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E9CEAD1C2338B4000EC6D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +81,7 @@
 		D0E9CE9F1C2338B4000EC6D9 = {
 			isa = PBXGroup;
 			children = (
+				D0D1035E1C28FF1F00228F8F /* README.txt */,
 				D0E9CEAA1C2338B4000EC6D9 /* tips */,
 				D0E9CEBF1C2338B4000EC6D9 /* tipsTests */,
 				D0E9CECA1C2338B4000EC6D9 /* tipsUITests */,
@@ -100,6 +105,7 @@
 				D0E9CEAB1C2338B4000EC6D9 /* AppDelegate.swift */,
 				D0E9CEAD1C2338B4000EC6D9 /* ViewController.swift */,
 				D0E9CEAF1C2338B4000EC6D9 /* Main.storyboard */,
+				D0D103601C2906C500228F8F /* SettingsViewController.swift */,
 				D0E9CEB21C2338B4000EC6D9 /* Assets.xcassets */,
 				D0E9CEB41C2338B4000EC6D9 /* LaunchScreen.storyboard */,
 				D0E9CEB71C2338B4000EC6D9 /* Info.plist */,
@@ -232,6 +238,7 @@
 			files = (
 				D0E9CEB61C2338B4000EC6D9 /* LaunchScreen.storyboard in Resources */,
 				D0E9CEB31C2338B4000EC6D9 /* Assets.xcassets in Resources */,
+				D0D1035F1C28FF1F00228F8F /* README.txt in Resources */,
 				D0E9CEB11C2338B4000EC6D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +266,7 @@
 			files = (
 				D0E9CEAE1C2338B4000EC6D9 /* ViewController.swift in Sources */,
 				D0E9CEAC1C2338B4000EC6D9 /* AppDelegate.swift in Sources */,
+				D0D103611C2906C500228F8F /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -403,11 +411,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.tipsy234;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -418,11 +427,12 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = tips/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.codepath.tipsy234;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

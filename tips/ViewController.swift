@@ -10,6 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    @IBOutlet weak var SettingsBarButtonItem: UIBarButtonItem!
     @IBAction func onTap(sender: AnyObject) {
         // Takes away keyboard if it is open
         view.endEditing(true)
@@ -21,9 +22,20 @@ class ViewController: UIViewController {
     
     @IBAction func onEditingChange(sender: AnyObject) {
         
+        // Get bill amount
         let billAmount:Double = ((billAmountField.text)! as NSString).doubleValue
-
+        
+        // Gather tip rates based on user defaults
         var tipRates = [0.18, 0.2, 0.22]
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let midValue = defaults.doubleForKey("user_default_mid_rate")
+        let increment = defaults.doubleForKey("user_default_increment")
+        
+        // Set the various choices of rate
+        tipRates[0] = (1-increment)*midValue
+        tipRates[1] = midValue
+        tipRates[2] = (1+increment)*midValue
+        
         let tipRate:Double = tipRates[tipRateController.selectedSegmentIndex]
         
         let tip:Double = billAmount * tipRate
@@ -38,9 +50,29 @@ class ViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
         // Do any additional setup after loading the view, typically from a nib.
+        
+        self.title = "Tip Calculator" // Title for navigation bar
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
+        
+        
+        // TODO NEED TO MAKE SURE I AM NOT OVERRIDING USER DEFAULT EVERYTIME THE APP IS RAN
+        
+        // Set the EZtip default middle tip rate
+        // this value can be restored in settings page
+        //let defaults = NSUserDefaults.standardUserDefaults()
+        //defaults.setDouble(0.2, forKey: "EZtip_default_mid_rate")
+        //defaults.synchronize()
+        
+        // Set the user default middle tip rate to be 20%
+        //defaults.setDouble(0.2, forKey:"user_default_mid_rate")
+        //defaults.synchronize()
+        
+        // Set the user default increment rate to be 2%
+        //defaults.setDouble(0.02, forKey:"user_default_increment")
+        //defaults.synchronize()
     }
 
     override func didReceiveMemoryWarning() {
