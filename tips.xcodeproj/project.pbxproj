@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D033B9261C35F19D00A21C1F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033B9251C35F19D00A21C1F /* SettingsViewController.swift */; };
+		D033B9281C35FCE500A21C1F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D033B9271C35FCE500A21C1F /* README.txt */; };
 		D0E9CEAC1C2338B4000EC6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9CEAB1C2338B4000EC6D9 /* AppDelegate.swift */; };
 		D0E9CEAE1C2338B4000EC6D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9CEAD1C2338B4000EC6D9 /* ViewController.swift */; };
 		D0E9CEB11C2338B4000EC6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E9CEAF1C2338B4000EC6D9 /* Main.storyboard */; };
@@ -36,6 +37,7 @@
 
 /* Begin PBXFileReference section */
 		D033B9251C35F19D00A21C1F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
+		D033B9271C35FCE500A21C1F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
 		D0E9CEA81C2338B4000EC6D9 /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E9CEAB1C2338B4000EC6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E9CEAD1C2338B4000EC6D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		D0E9CE9F1C2338B4000EC6D9 = {
 			isa = PBXGroup;
 			children = (
+				D033B9271C35FCE500A21C1F /* README.txt */,
 				D0E9CEAA1C2338B4000EC6D9 /* tips */,
 				D0E9CEBF1C2338B4000EC6D9 /* tipsTests */,
 				D0E9CECA1C2338B4000EC6D9 /* tipsUITests */,
@@ -235,6 +238,7 @@
 			files = (
 				D0E9CEB61C2338B4000EC6D9 /* LaunchScreen.storyboard in Resources */,
 				D0E9CEB31C2338B4000EC6D9 /* Assets.xcassets in Resources */,
+				D033B9281C35FCE500A21C1F /* README.txt in Resources */,
 				D0E9CEB11C2338B4000EC6D9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
