@@ -1,10 +1,10 @@
-Pre-work - EZtips
+Pre-work - EZtips Animation Update
 
 EZtips is a tip calculator application for iOS.
 
 Submitted by: Brian Hillsley
 
-Time spent: 25 hours spent in total
+Time spent: 26 hours spent in total
 
 ## User Stories
 
@@ -26,7 +26,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/d8FNj4p.gif' title='Updated EZTip App (CodePath PreHW update)' width='' alt='Updated EZTip App (CodePath PreHW update)' />
+<img src='http://i.imgur.com/8TwksBb.gif' title='Updated EZTip App (CodePath PreHW update) Animation' width='' alt='Updated EZTip App (CodePath PreHW update) Animation' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
