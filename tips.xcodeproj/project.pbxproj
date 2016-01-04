@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D033B9261C35F19D00A21C1F /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D033B9251C35F19D00A21C1F /* SettingsViewController.swift */; };
 		D033B9281C35FCE500A21C1F /* README.txt in Resources */ = {isa = PBXBuildFile; fileRef = D033B9271C35FCE500A21C1F /* README.txt */; };
+		D0414DF51C3A779000A2E36A /* ic_launcher.png in Resources */ = {isa = PBXBuildFile; fileRef = D0414DF41C3A779000A2E36A /* ic_launcher.png */; };
 		D0E9CEAC1C2338B4000EC6D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9CEAB1C2338B4000EC6D9 /* AppDelegate.swift */; };
 		D0E9CEAE1C2338B4000EC6D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0E9CEAD1C2338B4000EC6D9 /* ViewController.swift */; };
 		D0E9CEB11C2338B4000EC6D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0E9CEAF1C2338B4000EC6D9 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* Begin PBXFileReference section */
 		D033B9251C35F19D00A21C1F /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsViewController.swift; path = ../SettingsViewController.swift; sourceTree = "<group>"; };
 		D033B9271C35FCE500A21C1F /* README.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.txt; sourceTree = "<group>"; };
+		D0414DF41C3A779000A2E36A /* ic_launcher.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_launcher.png; sourceTree = "<group>"; };
 		D0E9CEA81C2338B4000EC6D9 /* tips.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = tips.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E9CEAB1C2338B4000EC6D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0E9CEAD1C2338B4000EC6D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,6 +106,7 @@
 			children = (
 				D033B9251C35F19D00A21C1F /* SettingsViewController.swift */,
 				D0E9CEAB1C2338B4000EC6D9 /* AppDelegate.swift */,
+				D0414DF41C3A779000A2E36A /* ic_launcher.png */,
 				D0E9CEAD1C2338B4000EC6D9 /* ViewController.swift */,
 				D0E9CEAF1C2338B4000EC6D9 /* Main.storyboard */,
 				D0E9CEB21C2338B4000EC6D9 /* Assets.xcassets */,
@@ -240,6 +243,7 @@
 				D0E9CEB31C2338B4000EC6D9 /* Assets.xcassets in Resources */,
 				D033B9281C35FCE500A21C1F /* README.txt in Resources */,
 				D0E9CEB11C2338B4000EC6D9 /* Main.storyboard in Resources */,
+				D0414DF51C3A779000A2E36A /* ic_launcher.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

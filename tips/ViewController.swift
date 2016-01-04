@@ -19,6 +19,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var tipLabel: UILabel!
     @IBOutlet weak var billAmountField: UITextField!
     
+    @IBOutlet weak var logoImage: UIImageView!
     @IBAction func onEditingChange(sender: AnyObject) {
         
         let billAmount:Double = ((billAmountField.text)! as NSString).doubleValue
@@ -63,6 +64,9 @@ class ViewController: UIViewController {
     }
     override func viewDidAppear(animated: Bool) {
         onEditingChange(self)
+        UIView.animateWithDuration(3){ () -> Void in
+        self.logoImage.alpha = 0
+        }
     }
 
     override func didReceiveMemoryWarning() {
