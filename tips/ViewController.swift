@@ -23,7 +23,24 @@ class ViewController: UIViewController {
         
         let billAmount:Double = ((billAmountField.text)! as NSString).doubleValue
 
+        // Gather tip rates based on user defaults
+        let defaults = NSUserDefaults.standardUserDefaults()
+        let midValue:Double = defaults.doubleForKey("user_default_mid_rate")
+        
+        let increment:Double = 0.02
+        // Placeholder tip values
         var tipRates = [0.18, 0.2, 0.22]
+        
+        // Set the various choices of rate
+        tipRates[0] = (midValue-increment)
+        tipRates[1] = midValue
+        tipRates[2] = (midValue+increment)
+        
+        tipRateController.setTitle(String(format: "%%%.1f", 100*tipRates[0]), forSegmentAtIndex: 0)
+        tipRateController.setTitle(String(format: "%%%.1f", 100*tipRates[1]), forSegmentAtIndex: 1)
+        tipRateController.setTitle(String(format: "%%%.1f", 100*tipRates[2]), forSegmentAtIndex: 2)
+        
+        // capture selected rate using selectedSegmentIndex
         let tipRate:Double = tipRates[tipRateController.selectedSegmentIndex]
         
         let tip:Double = billAmount * tipRate
@@ -34,6 +51,7 @@ class ViewController: UIViewController {
             
         tipLabel.text = String(format: "$%.2f", tip)
         totalLabel.text = String(format: "$%.2f", total)
+        
     }
    
     override func viewDidLoad() {
@@ -42,6 +60,9 @@ class ViewController: UIViewController {
         tipLabel.text = "$0.00"
         totalLabel.text = "$0.00"
         self.title = "EZTip"
+    }
+    override func viewDidAppear(animated: Bool) {
+        onEditingChange(self)
     }
 
     override func didReceiveMemoryWarning() {
