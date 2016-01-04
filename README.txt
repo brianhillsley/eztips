@@ -4,7 +4,7 @@ EZtips is a tip calculator application for iOS.
 
 Submitted by: Brian Hillsley
 
-Time spent: 20 hours spent in total
+Time spent: 25 hours spent in total
 
 ## User Stories
 
@@ -12,7 +12,7 @@ The following **required** functionality is complete:
 * [x] User can enter a bill amount, choose a tip percentage, and see the tip and total values.
 
 The following **optional** features are implemented:
-* [ ] Settings page to change the default tip percentage.
+* [x] Settings page to change the default tip percentage.
 * [ ] UI animations
 * [ ] Remembering the bill amount across app restarts (if <10mins)
 * [ ] Using locale-specific currency and currency thousands separators.
@@ -26,13 +26,14 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/lZ03Mbi.gif' title='IOS PreHW Video Walkthrough' width='' alt='IOS PreHW Video Walkthrough' />
+<img src='http://i.imgur.com/d8FNj4p.gif' title='Updated EZTip App (CodePath PreHW update)' width='' alt='Updated EZTip App (CodePath PreHW update)' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
+-----------------------------------------------------------
 Large amount of problems regarding enterring data into settings text fields, so I redid the project twice, and finally just left out the settings content. This is where at least 8 hours were spent.
 
 ## License
